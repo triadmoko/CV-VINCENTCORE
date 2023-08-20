@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "e5cc7cb3-0a47-46a0-b6ad-6dfc38ad25c0",
+		"name": "VINCENTCORE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27175715",
+		"_collection_link": "https://bimbel-ind.postman.co/workspace/Team-Workspace~da445120-9d61-4893-87ab-29ad76307ae9/collection/27175715-e5cc7cb3-0a47-46a0-b6ad-6dfc38ad25c0?action=share&source=collection_link&creator=27175715"
+	},
+	"item": [
+		{
+			"name": "REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"triamdoko\",\n    \"email\":\"triamdoko@gmail.com\",\n    \"password\":\"Tdfasdf@ajksdf!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth/v1/register/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"v1",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"triamdoko@gmail.com\",\n    \"password\":\"Tdfasdf@ajksdf!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth/v1/login/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
