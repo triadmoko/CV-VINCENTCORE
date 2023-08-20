@@ -18,7 +18,7 @@
 - Go-Migrate
 
 ### Running Project
-
+Create file .env or rename file .env.example to .env
 ```bash
 go mod tidy
 
